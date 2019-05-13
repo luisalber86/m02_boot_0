@@ -6,3 +6,4 @@ def sumaTodos(limitTo):
     return resultado
 
 print(sumaTodos(100))
+print ("Hola mundo")
