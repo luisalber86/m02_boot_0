@@ -12,3 +12,12 @@ def sumatoriorecur(num):
         return 0
     
 print("\n {}".format(sumatoriorecur(3)))
+
+
+def factorial(num):
+    if num > 1:
+        return num * factorial(num - 1)
+    else:
+        return 1
+
+print(factorial(4))
