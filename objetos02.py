@@ -32,8 +32,8 @@ class PerroAsistencia(Perro):
     def pasear(self):
         print("ayudo a pasear a mi amo {}".format(self.amo))
 
-    def ladrar (self):
-        if self.__trabajando:
+    def ladrar(self):
+        if self.__trabajando: #__ significa privados
             print("No puedo ladrar")
         else:
             Perro.ladrar(self) #necesario meter la instancia, ivocar metodo padre
@@ -45,6 +45,14 @@ class PerroAsistencia(Perro):
         else:
             self.__trabajando = valor
 
+
+class Timido():
+    def __init__(self, nombre):
+        self.__nombre = nombre
+
+    def preguntarNombreConCuidado(self):
+        return self.__nombre
+        
 salchicho = Perro('Salchicho', 3, 40)
 juno = Perro('Juno', 8, 17)
 lola = Perro('Lola', 2, 3)
